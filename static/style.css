@@ -10,6 +10,12 @@ body, #content {
 	background-color: #1a1a1a;
 }
 
+div#legend {
+	font-family: Merriweather, serif;
+	font-size: 2rem;
+	font-weight: 300;
+}
+
 main {
 	padding-top: 3rem;
 	width: 65vw;
@@ -30,8 +36,17 @@ aside {
 aside h1 {
 	font-size: 3rem;
 	font-family: 'Merriweather', serif;
+	font-weight: 700;
 }
 
 .node-label {
 	font-family: Verdana, sans-serif;
+}
+
+#sex .circle {
+	color: "#F7B1AB";
+}
+
+#notsex .circle {
+	color: "#F7B1AB";
 }

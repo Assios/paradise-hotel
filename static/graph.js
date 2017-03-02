@@ -16,7 +16,7 @@ let force = d3.layout.force()
 	.links(edges)
 	.linkDistance(width/2)
 	.linkStrength(0.2)
-	.charge(-1000)
+	.charge(-1200)
 
 let svg = d3.select('main').append('svg')
 	.attr('width', width)
@@ -55,7 +55,7 @@ let text = node.append('text')
 	.text(d => d.name)
 
 force.on('tick', () => {
-	let radius = width/20
+	let radius = width/18
 	circle.attr('r', radius)
 		.attr('cx', d => d.x)
 		.attr('cy', d => d.y)
