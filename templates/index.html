@@ -1,10 +1,4 @@
-<!doctype html>
-<html>
-<head>
-	<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-	<script src="http://d3js.org/d3.v3.min.js"></script>
-</head>
-<body>
-	<script src="{{ url_for('static', filename='graph.js') }}"></script>
-</body>
-</html>
+{% extends "layout.html" %}
+{% block content %}
+<script src="{{ url_for('static', filename='graph.js') }}"></script>
+{% endblock %}
