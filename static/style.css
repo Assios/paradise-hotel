@@ -12,7 +12,7 @@ body {
 
 main {
 	padding-top: 3rem;
-	width: 60vw;
+	width: 65vw;
 	clear: none;
 	height: 100vh;
 }
@@ -25,8 +25,6 @@ aside {
 	clear: none;
 	color: #eee;
 	overflow: hidden;
-	padding-left: 1rem;
-	padding-right: 1rem;
 }
 
 aside h1 {

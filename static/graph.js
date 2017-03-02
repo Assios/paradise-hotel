@@ -6,8 +6,8 @@ let nodes = [
 	{x: 0.1*width, y: 0.8*height, name: 'Octavia'}
 ]
 let edges = [
-	{source: 0, target: 1},
-	{source: 0, target: 2}
+	{source: 0, target: 1, type: 'sex'},
+	{source: 0, target: 2, type: 'notsex'}
 ]
 
 let force = d3.layout.force()
@@ -21,15 +21,23 @@ let force = d3.layout.force()
 let svg = d3.select('main').append('svg')
 	.attr('width', width)
 	.attr('height', height)
-console.log(d3.select('body'))
+
+let notSexColor = '#7A9B76'
+let sexColor = '#F7B1AB'
 
 let edge = svg.selectAll('.link')
 	.data(edges)
 	.enter()
 	.append('line')
 	.attr('class', 'link')
-	.style('stroke', d => 'black')
-	.style('stroke-width', d => "2px")
+	.style('stroke', d => {
+		if (d.type === 'sex') {
+			return sexColor
+		} else {
+			return notSexColor
+		}
+	})
+	.style('stroke-width', d => "5px")
 
 let node = svg.selectAll('.node')
 	.data(nodes)
@@ -38,8 +46,8 @@ let node = svg.selectAll('.node')
 
 let circle = node.append('circle')
 	.attr('class', 'node')
-	.style('stroke', d => 'red')
-	.style('stroke-width', d => '1.5px')
+	.style('stroke', d => '#ccc')
+	.style('stroke-width', d => '10px')
 	.style('fill', d => 'white')
 
 let text = node.append('text')
