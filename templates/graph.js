@@ -8,7 +8,7 @@ let edges = [
 	{source: 0, target: 2}
 ]
 let width = 800;
-let height = 800;
+let height = 500;
 
 let nodesAbsoluteLocations = nodes.map(el => ({x: el.x*width, y: el.y*height}))
 console.log(nodesAbsoluteLocations)
@@ -17,9 +17,9 @@ let force = d3.layout.force()
 	.size([width, height])
 	.nodes(nodesAbsoluteLocations)
 	.links(edges)
-	.linkDistance(width/3)
+	.linkDistance(width/2)
 	.linkStrength(0.2)
-	.charge(-500)
+	.charge(-1000)
 
 let svg = d3.select('body').append('svg')
 	.attr('width', width)
@@ -37,12 +37,14 @@ let node = svg.selectAll('.node')
 	.enter()
 	.append('circle')
 	.attr('class', 'node')
+	.style('stroke', d => 'red')
+	.style('stroke-width', d => width/250)
+	.style('fill', d => 'white')
 
 force.on('tick', () => {
-	node.attr('r', width/25)
+	node.attr('r', width/20)
 		.attr('cx', d => d.x)
 		.attr('cy', d => d.y)
-		.style('fill', d => 'red')
 
 	edge.attr('x1', d => d.source.x)
 		.attr('y1', d => d.source.y)
