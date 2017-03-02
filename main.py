@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-from flask import Flask, render_template, request, redirect, url_for
+from flask import Flask, render_template, request, session
 import sqlite3 as sql
 app = Flask(__name__)
 
@@ -28,6 +28,9 @@ def verify_username_password(username, password):
 
 @app.route('/')
 def home():
+    if session.get('logged_in'):
+        print session['logged_in']
+
     return render_template('index.html')
 
 
@@ -37,11 +40,17 @@ def login():
     if request.method == 'POST':
         username = request.form['username']
         password = request.form['password']
-        print(verify_username_password(username, password))
+        if verify_username_password(username, password):
+            print('VERIFIED')
+            session['logged_in'] = username
+            print session
 
     return render_template('login.html', error=error)
 
 
 if __name__ == '__main__':
+    app.secret_key = 'secret'
+    app.config['SESSION_TYPE'] = 'filesystem'
+
     add("admin", "password")
     app.run(debug=True)
