@@ -28,6 +28,8 @@ let edge = svg.selectAll('.link')
 	.enter()
 	.append('line')
 	.attr('class', 'link')
+	.style('stroke', d => 'black')
+	.style('stroke-width', d => "2px")
 
 let node = svg.selectAll('.node')
 	.data(nodes)
@@ -37,7 +39,7 @@ let node = svg.selectAll('.node')
 let circle = node.append('circle')
 	.attr('class', 'node')
 	.style('stroke', d => 'red')
-	.style('stroke-width', d => width/250)
+	.style('stroke-width', d => '1.5px')
 	.style('fill', d => 'white')
 
 let text = node.append('text')
@@ -45,20 +47,23 @@ let text = node.append('text')
 	.text(d => d.name)
 
 force.on('tick', () => {
-	circle.attr('r', width/20)
+	let radius = width/20
+	circle.attr('r', radius)
 		.attr('cx', d => d.x)
 		.attr('cy', d => d.y)
 
-	text.attr('x', d => d.x - width/40)
-		.attr('y', d => d.y + width/120)
+	text.attr('x', function(d) {
+			return d.x - this.getBBox().width/2
+		})
+		.attr('y', function(d) {
+			return d.y + this.getBBox().height/4
+		})
 		.style('fill', 'black')
 
 	edge.attr('x1', d => d.source.x)
 		.attr('y1', d => d.source.y)
 		.attr('x2', d => d.target.x)
 		.attr('y2', d => d.target.y)
-		.style('stroke', d => 'black')
-		.style('stroke-width', d => width/150)
 })
 
 force.start()
