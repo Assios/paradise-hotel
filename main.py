@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python
 from flask import Flask, render_template, request, session
 import sqlite3 as sql
 app = Flask(__name__)

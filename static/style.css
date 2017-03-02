@@ -53,15 +53,15 @@ aside h1 {
 
 #sex .circle {
 	color: #F7B1AB;
-	font-size: 6rem;
+	font-size: 8rem;
 }
 
 #notsex .circle {
 	color: #7A9B76;
-	font-size: 6rem;
+	font-size: 8rem;
 }
 
 .legend-text {
-	top: 0.3rem;
+	top: 0.5rem;
 	position: relative;
 }
