@@ -1,0 +1,17 @@
+[
+	{
+		"id": 1,
+		"name": "Julius Cæsar",
+		"url": "http://lol.tv3.no/julius",
+		"sex": [2, 5],
+		"notsex": [7]
+	},
+	{
+		"id": 2,
+		"name": "Kornelius Kvakk",
+		"url": "http://lol.tv3.no/kornelius",
+		"sex": [1],
+		"notsex": []
+	},
+	"osv"
+]
