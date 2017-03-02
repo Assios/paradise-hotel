@@ -43,10 +43,25 @@ aside h1 {
 	font-family: Verdana, sans-serif;
 }
 
+#legend {
+	padding-left: 2rem;
+}
+
+#sex *, #notsex * {
+	vertical-align: middle;
+}
+
 #sex .circle {
-	color: "#F7B1AB";
+	color: #F7B1AB;
+	font-size: 6rem;
 }
 
 #notsex .circle {
-	color: "#F7B1AB";
+	color: #7A9B76;
+	font-size: 6rem;
+}
+
+.legend-text {
+	top: 0.3rem;
+	position: relative;
 }
