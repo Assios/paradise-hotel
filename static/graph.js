@@ -18,7 +18,7 @@ let force = d3.layout.force()
 	.linkStrength(0.2)
 	.charge(-1000)
 
-let svg = d3.select('body').append('svg')
+let svg = d3.select('main').append('svg')
 	.attr('width', width)
 	.attr('height', height)
 console.log(d3.select('body'))
