@@ -1,16 +1,9 @@
-<!doctype html>
-<html>
-<head>
-	<link href="https://fonts.googleapis.com/css?family=Merriweather:700,900" rel="stylesheet">
-	<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-	<script src="http://d3js.org/d3.v3.min.js"></script>
-</head>
-<body>
-	<main>
-	</main>
-	<aside>
-		<h1>Hvem har pult og pøket i Paradise?</h1>
-	</aside>
-	<script src="{{ url_for('static', filename='graph.js') }}"></script>
-</body>
-</html>
+{% extends "layout.html" %}
+{% block content %}
+<main>
+</main>
+<aside>
+	<h1>Hvem har pult og pøket i Paradise?</h1>
+</aside>
+<script src="{{ url_for('static', filename='graph.js') }}"></script>
+{% endblock %}
