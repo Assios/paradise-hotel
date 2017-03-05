@@ -39,10 +39,34 @@ let edge = svg.selectAll('.link')
 	})
 	.style('stroke-width', d => "5px")
 
+function dragstart(d, i) {
+    force.stop();
+}
+
+function dragmove(d, i) {
+    d.px += d3.event.dx;
+    d.py += d3.event.dy;
+    d.x += d3.event.dx;
+    d.y += d3.event.dy;
+    tick();
+}
+
+function dragend(d, i) {
+    d.fixed = true;
+    tick();
+    force.resume();
+}
+
+let node_drag = d3.behavior.drag()
+    .on("dragstart", dragstart)
+    .on("drag", dragmove)
+    .on("dragend", dragend);
+
 let node = svg.selectAll('.node')
 	.data(nodes)
 	.enter()
 	.append('g')
+    .call(node_drag);
 
 let circle = node.append('circle')
 	.attr('class', 'node')
@@ -54,7 +78,7 @@ let text = node.append('text')
 	.attr('class', 'node-label')
 	.text(d => d.name)
 
-force.on('tick', () => {
+function tick() {
 	let radius = width/18
 	circle.attr('r', radius)
 		.attr('cx', d => d.x)
@@ -72,6 +96,8 @@ force.on('tick', () => {
 		.attr('y1', d => d.source.y)
 		.attr('x2', d => d.target.x)
 		.attr('y2', d => d.target.y)
-})
+};
+
+force.on("tick", tick);
 
 force.start()
