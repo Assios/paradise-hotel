@@ -1,14 +1,45 @@
 let width = 800;
 let height = 500;
-let nodes = [
-	{x: 0.1*width, y: 0.1*height, name: 'Julius'},
-	{x: 0.2*width, y: 0.2*height, name: 'Fulvia'},
-	{x: 0.1*width, y: 0.8*height, name: 'Octavia'}
-]
-let edges = [
-	{source: 0, target: 1, type: 'sex'},
-	{source: 0, target: 2, type: 'notsex'}
-]
+const m = () => Math.random();
+
+const data = [
+	{
+		"id": 0,
+		"name": "Julius Cæsar",
+		"url": "http://lol.tv3.no/julius",
+		"sex": [1, 2],
+		"notsex": []
+	},
+	{
+		"id": 1,
+		"name": "Kornelius Kvakk",
+		"url": "http://lol.tv3.no/kornelius",
+		"sex": [],
+		"notsex": []
+	},
+	{
+		"id": 2,
+		"name": "Johnny Cash",
+		"url": "http://lol.tv3.no/kornelius",
+		"sex": [],
+		"notsex": [0]
+	}
+];
+
+let nodes = [];
+let edges = [];
+
+for (let i = 0; i < data.length; i++) {
+	nodes.push({x: m(), y: m(), name: data[i].name});
+
+	for (let j = 0; j < data[i].sex.length; j++) {
+		edges.push({source: data[i].id, target: data[i].sex[j], type: 'sex'});
+	}
+
+	for (let j = 0; j < data[i].notsex.length; j++) {
+		edges.push({source: data[i].id, target: data[i].notsex[j], type: 'notsex'});
+	}
+}
 
 let force = d3.layout.force()
 	.size([width, height])
