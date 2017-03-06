@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 import sqlite3 as sql
 
 conn = sql.connect('database.db')
