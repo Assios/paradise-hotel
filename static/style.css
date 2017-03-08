@@ -1,12 +1,12 @@
 * {
 	box-sizing: border-box;
+	font-family: 'Open Sans', sans-serif;
 }
 
 body, #content {
 	width: 100%;
 	height: 100%;
 	margin: 0;
-	display: flex;
 	background-color: #1a1a1a;
 }
 
@@ -17,26 +17,32 @@ div#legend {
 }
 
 main {
-	padding-top: 3rem;
+	padding-top: 0rem;
 	width: 65vw;
 	clear: none;
 	height: 100vh;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 aside {
-	padding-top: 3rem;
-	height: 100vh;
-	flex-grow: 1;
+	width: 100%;
 	float: right;
 	clear: none;
 	color: #eee;
 	overflow: hidden;
+	display: flex;
+	background-color: #222;
 }
 
 aside h1 {
-	font-size: 3rem;
+	font-size: 4rem;
 	font-family: 'Merriweather', serif;
 	font-weight: 700;
+	width: 60%;
+	margin-top: 6rem;
+	margin-bottom: 6rem;
+	padding-left: 6rem;
 }
 
 .node-label {
@@ -45,6 +51,21 @@ aside h1 {
 
 #legend {
 	padding-left: 2rem;
+	display: flex;
+	width: 40%;
+	margin-top: 2rem;
+}
+
+#legend * {
+	font-size: 3rem;
+}
+
+#sex {
+	width: 20rem;
+}
+
+#notsex {
+	flex-grow: 1;
 }
 
 #sex *, #notsex * {
@@ -62,6 +83,6 @@ aside h1 {
 }
 
 .legend-text {
-	top: 0.5rem;
+	top: 0.6rem;
 	position: relative;
 }
