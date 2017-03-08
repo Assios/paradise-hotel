@@ -189,7 +189,7 @@ function tick() {
     });
 
 	text.style('fill', 'white')
-		.style('font-size', '1rem')
+		.style('font-size', '1.5rem')
 
 	edge.attr('x1', d => d.source.x)
 		.attr('y1', d => d.source.y)

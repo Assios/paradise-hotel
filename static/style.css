@@ -1,5 +1,6 @@
 * {
 	box-sizing: border-box;
+	font-family: Times, serif;
 }
 
 body, #content {
@@ -34,7 +35,7 @@ aside {
 }
 
 aside h1 {
-	font-size: 3rem;
+	font-size: 4rem;
 	font-family: 'Merriweather', serif;
 	font-weight: 700;
 }
@@ -45,6 +46,10 @@ aside h1 {
 
 #legend {
 	padding-left: 2rem;
+}
+
+#legend * {
+	font-size: 3rem;
 }
 
 #sex *, #notsex * {
