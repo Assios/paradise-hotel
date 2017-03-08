@@ -131,7 +131,10 @@ let image = node.append("svg:image")
     .attr("x", 0)
     .attr("y", 0)
 	.on("click", function() {
+		const p = $(this).context.__data__;
+
 		$('#myModal').modal();
+		$('.modal-title').text(p.name);
 	});
 
 
@@ -201,15 +204,6 @@ function tick() {
 		.attr('y2', d => d.target.y)
 };
 
-$('#myModal').on('show.bs.modal', function (event) {
-  var button = $(event.relatedTarget); // Button that triggered the modal
-  var recipient = button.data('whatever') // Extract info from data-* attributes
-
-  var modal = $(this);
-  modal.find('.modal-title').text('New message to ' + recipient)
-  modal.find('.modal-body input').val(recipient)
-})
-
 force.on("tick", tick);
 
-force.start()
+force.start();
