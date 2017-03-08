@@ -4,3 +4,4 @@ import 'bootstrap/dist/css/bootstrap.css';
 
 import './style.css';
 import './graph.js';
+import './butterfly.js';
