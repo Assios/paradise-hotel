@@ -5,6 +5,7 @@
   "repository": "git@github.com:Assios/paradise-hotel.git",
   "devDependencies": {
     "bootstrap": "^3.3.7",
+    "copy-webpack-plugin": "4.0.1",
     "css-loader": "^0.26.4",
     "d3": "3.*",
     "html-webpack-plugin": "^2.28.0",
