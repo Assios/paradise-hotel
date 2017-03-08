@@ -1,43 +1,9 @@
 const d3 = require('d3');
+const data = require('../data-example.json');
 
 let width = 1000;
 let height = 700;
 const m = () => Math.random();
-
-const data = [
-	{
-		"id": 0,
-		"name": "Sophie Vågsæther",
-		"url": "http://lol.tv3.no/julius",
-		"sex": [2, 3],
-		"notsex": [],
-		"picture": '/img/sophie.png'
-	},
-	{
-		"id": 1,
-		"name": "Martine Johansen",
-		"url": "http://lol.tv3.no/kornelius",
-		"sex": [2],
-		"notsex": [3],
-		"picture": '/img/sophie.png'
-	},
-	{
-		"id": 2,
-		"name": "Aleksander Sæterstøl",
-		"url": "http://lol.tv3.no/kornelius",
-		"sex": [],
-		"notsex": [],
-		"picture": '/img/sophie.png'
-	},
-	{
-		"id": 3,
-		"name": "Grunde Myhrer",
-		"url": "http://lol.tv3.no/kornelius",
-		"sex": [],
-		"notsex": [],
-		"picture": '/img/sophie.png'
-	},
-];
 
 let nodes = [];
 let edges = [];

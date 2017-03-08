@@ -1,23 +1,31 @@
 [
 	{
-		"id": 1,
-		"name": "Julius Cæsar",
-		"url": "http://lol.tv3.no/julius",
-		"sex": [2, 3],
-		"notsex": []
-	},
-	{
-		"id": 2,
-		"name": "Kornelius Kvakk",
-		"url": "http://lol.tv3.no/kornelius",
-		"sex": [3],
-		"notsex": []
-	},
-	{
-		"id": 3,
-		"name": "Kornelius Kvakk",
-		"url": "http://lol.tv3.no/kornelius",
-		"sex": [],
-		"notsex": [2]
+	"id": 0,
+	"name": "Sophie Vågsæther",
+	"url": "http://lol.tv3.no/julius",
+	"sex": [2, 3],
+	"notsex": [],
+	"picture": "/img/sophie.png"
+}, {
+	"id": 1,
+	"name": "Martine Johansen",
+	"url": "http://lol.tv3.no/kornelius",
+	"sex": [2],
+	"notsex": [3],
+	"picture": "/img/sophie.png"
+}, {
+	"id": 2,
+	"name": "Aleksander Sæterstøl",
+	"url": "http://lol.tv3.no/kornelius",
+	"sex": [],
+	"notsex": [],
+	"picture": "/img/sophie.png"
+}, {
+	"id": 3,
+	"name": "Grunde Myhrer",
+	"url": "http://lol.tv3.no/kornelius",
+	"sex": [],
+	"notsex": [],
+	"picture": "/img/sophie.png"
 	}
 ]
