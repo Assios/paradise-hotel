@@ -8,28 +8,32 @@ const data = [
 		"name": "Sophie Vågsæther",
 		"url": "http://lol.tv3.no/julius",
 		"sex": [2, 3],
-		"notsex": []
+		"notsex": [],
+		"picture": '/static/img/sophie.png'
 	},
 	{
 		"id": 1,
 		"name": "Martine Johansen",
 		"url": "http://lol.tv3.no/kornelius",
 		"sex": [2],
-		"notsex": [3]
+		"notsex": [3],
+		"picture": '/static/img/sophie.png'
 	},
 	{
 		"id": 2,
 		"name": "Aleksander Sæterstøl",
 		"url": "http://lol.tv3.no/kornelius",
 		"sex": [],
-		"notsex": []
+		"notsex": [],
+		"picture": '/static/img/sophie.png'
 	},
 	{
 		"id": 3,
 		"name": "Grunde Myhrer",
 		"url": "http://lol.tv3.no/kornelius",
 		"sex": [],
-		"notsex": []
+		"notsex": [],
+		"picture": '/static/img/sophie.png'
 	},
 ];
 
@@ -37,7 +41,7 @@ let nodes = [];
 let edges = [];
 
 for (let i = 0; i < data.length; i++) {
-	nodes.push({x: m(), y: m(), name: data[i].name});
+	nodes.push({x: m(), y: m(), name: data[i].name, picture: data[i].picture});
 
 	for (let j = 0; j < data[i].sex.length; j++) {
 		edges.push({source: data[i].id, target: data[i].sex[j], type: 'sex'});
@@ -121,7 +125,7 @@ let clip = node.append('clipPath')
 	.attr('r', 2*radius)
 
 let image = node.append("svg:image")
-    .attr("xlink:href", '/static/img/sophie.png')
+    .attr("xlink:href", d => d.picture)
     .attr("width", 2*radius)
     .attr("height", 2*radius)
     .attr("x", 0)
