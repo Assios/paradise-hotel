@@ -3,11 +3,14 @@
 	font-family: 'Open Sans', sans-serif;
 }
 
+body {
+	background-color: #1a1a1a;
+}
+
 body, #content {
 	width: 100%;
 	height: 100%;
 	margin: 0;
-	background-color: #1a1a1a;
 }
 
 div#legend {
@@ -85,4 +88,13 @@ aside h1 {
 .legend-text {
 	top: 0.6rem;
 	position: relative;
+}
+
+.butterfly {
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }

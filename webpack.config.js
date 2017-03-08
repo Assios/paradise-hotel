@@ -25,12 +25,14 @@ module.exports = {
       template: path.resolve(__dirname, 'app/index.html')
     }),
     new CopyWebpackPlugin([
-      {from: 'app/img', to: 'img'}
+      {from: 'app/img', to: 'img'},
+      {from: 'app/butterfly.obj'},
     ]),
     new webpack.ProvidePlugin({
       jQuery: 'jquery',
       jquery: 'jquery',
       $: 'jquery',
+      'THREE': 'three',
     })
   ]
 };
