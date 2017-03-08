@@ -1,5 +1,5 @@
 let width = 800;
-let height = 500;
+let height = 700;
 const m = () => Math.random();
 
 const data = [
