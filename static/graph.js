@@ -130,6 +130,10 @@ let image = node.append("svg:image")
     .attr("height", 2*radius)
     .attr("x", 0)
     .attr("y", 0)
+	.on("click", function() {
+		$('#myModal').modal();
+	});
+
 
 function polarToCartesian(centerX, centerY, radius, angleInDegrees) {
     var angleInRadians = (angleInDegrees-90) * Math.PI / 180.0;
