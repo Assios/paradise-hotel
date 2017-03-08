@@ -197,6 +197,12 @@ function tick() {
 		.attr('y2', d => d.target.y)
 };
 
+function modal(id, name) {
+	$(id).modal('show');
+	var modal = $(this);
+	modal.find('.modal-title').text('New message to ' + name);
+}
+
 force.on("tick", tick);
 
 force.start()
