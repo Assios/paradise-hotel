@@ -5,25 +5,32 @@ const m = () => Math.random();
 const data = [
 	{
 		"id": 0,
-		"name": "Julius Cæsar",
+		"name": "Sophie Vågsæther",
 		"url": "http://lol.tv3.no/julius",
-		"sex": [1, 2],
+		"sex": [2, 3],
 		"notsex": []
 	},
 	{
 		"id": 1,
-		"name": "Kornelius Kvakk",
+		"name": "Martine Johansen",
+		"url": "http://lol.tv3.no/kornelius",
+		"sex": [2],
+		"notsex": [3]
+	},
+	{
+		"id": 2,
+		"name": "Aleksander Sæterstøl",
 		"url": "http://lol.tv3.no/kornelius",
 		"sex": [],
 		"notsex": []
 	},
 	{
-		"id": 2,
-		"name": "Johnny Cash",
+		"id": 3,
+		"name": "Grunde Myhrer",
 		"url": "http://lol.tv3.no/kornelius",
 		"sex": [],
-		"notsex": [0]
-	}
+		"notsex": []
+	},
 ];
 
 let nodes = [];
