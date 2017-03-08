@@ -95,6 +95,8 @@ function dragend(d, i) {
     force.resume();
 }
 
+let radius = width/18
+
 let node_drag = d3.behavior.drag()
     .on("dragstart", dragstart)
     .on("drag", dragmove)
@@ -110,17 +112,44 @@ let circle = node.append('circle')
 	.attr('class', 'node')
 	.style('stroke', d => '#ccc')
 	.style('stroke-width', d => '10px')
-	.style('fill', d => 'white')
 
 let text = node.append('text')
 	.attr('class', 'node-label')
 	.text(d => d.name)
 
+let clip = node.append('clipPath')
+	.attr('id', (d,i) => 'clip' + i)
+	.append('circle')
+	.attr('cx', 2*radius)
+	.attr('cy', 2*radius)
+	.attr('r', 2*radius)
+
+let image = node.append("svg:image")
+    .attr("xlink:href", '/static/img/sophie.png')
+    .attr("width", 2*radius)
+    .attr("height", 2*radius)
+    .attr("x", 0)
+    .attr("y", 0)
+
 function tick() {
-	let radius = width/18
 	circle.attr('r', radius)
 		.attr('cx', d => d.x)
 		.attr('cy', d => d.y)
+		.style('fill', 'url(#image)')
+
+	clip.attr('r', radius)
+		.attr('cx', d => d.x)
+		.attr('cy', d => d.y)
+		.style('fill', 'url(#image)')
+
+	image.attr('x', function(d) {
+			return d.x - this.getBBox().width/2
+		})
+		.attr('y', function(d) {
+			return d.y - this.getBBox().height/2
+		})
+		.style('fill', 'black')
+		.attr('clip-path', (d,i) => 'url(#clip' + i + ')')
 
 	text.attr('x', function(d) {
 			return d.x - this.getBBox().width/2
