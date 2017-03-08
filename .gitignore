@@ -4,6 +4,8 @@
 __pycache__/
 *.py[cod]
 *$py.class
+*.swp
+node_modules
 
 # C extensions
 *.so

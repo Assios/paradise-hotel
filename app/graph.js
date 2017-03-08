@@ -1,3 +1,5 @@
+const d3 = require('d3');
+
 let width = 1000;
 let height = 700;
 const m = () => Math.random();
