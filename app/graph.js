@@ -133,7 +133,7 @@ let image = node.append("svg:image")
     .attr("x", 0)
     .attr("y", 0)
 	.on("click", function() {
-		const p = $(this).context.__data__;
+		p = $(this)[0].__data__;
 
 		$('#myModal').modal();
 		$('.modal-title').text(p.name);
