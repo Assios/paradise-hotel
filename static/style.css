@@ -1,6 +1,6 @@
 * {
 	box-sizing: border-box;
-	font-family: Times, serif;
+	font-family: 'Open Sans', sans-serif;
 }
 
 body, #content {
@@ -83,6 +83,6 @@ aside h1 {
 }
 
 .legend-text {
-	top: 0.2rem;
+	top: 0.6rem;
 	position: relative;
 }
