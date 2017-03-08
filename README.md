@@ -1,5 +1,5 @@
 # paradise-hotel
 
-1. ```pip install -r requirements.txt```
-2. ```python main.py```
-3. localhost:5000
+Install [yarn](https://yarnpkg.com/en/docs/install).
+
+Run `yarn start` to run the project. It will now serve on 0.0.0.0:8080.

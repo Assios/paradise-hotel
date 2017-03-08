@@ -1,3 +1,5 @@
+const d3 = require('d3');
+
 let width = 1000;
 let height = 700;
 const m = () => Math.random();
@@ -9,7 +11,7 @@ const data = [
 		"url": "http://lol.tv3.no/julius",
 		"sex": [2, 3],
 		"notsex": [],
-		"picture": '/static/img/sophie.png'
+		"picture": '/img/sophie.png'
 	},
 	{
 		"id": 1,
@@ -17,7 +19,7 @@ const data = [
 		"url": "http://lol.tv3.no/kornelius",
 		"sex": [2],
 		"notsex": [3],
-		"picture": '/static/img/sophie.png'
+		"picture": '/img/sophie.png'
 	},
 	{
 		"id": 2,
@@ -25,7 +27,7 @@ const data = [
 		"url": "http://lol.tv3.no/kornelius",
 		"sex": [],
 		"notsex": [],
-		"picture": '/static/img/sophie.png'
+		"picture": '/img/sophie.png'
 	},
 	{
 		"id": 3,
@@ -33,7 +35,7 @@ const data = [
 		"url": "http://lol.tv3.no/kornelius",
 		"sex": [],
 		"notsex": [],
-		"picture": '/static/img/sophie.png'
+		"picture": '/img/sophie.png'
 	},
 ];
 
