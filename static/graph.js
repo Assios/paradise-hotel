@@ -8,7 +8,7 @@ const data = [
 		"name": "Sophie Vågsæther",
 		"url": "http://lol.tv3.no/julius",
 		"sex": [2, 3],
-		"notsex": []
+		"notsex": [],
 	},
 	{
 		"id": 1,
@@ -135,6 +135,12 @@ function tick() {
 		.attr('x2', d => d.target.x)
 		.attr('y2', d => d.target.y)
 };
+
+function modal(id, name) {
+	$(id).modal('show');
+	var modal = $(this);
+	modal.find('.modal-title').text('New message to ' + name);
+}
 
 force.on("tick", tick);
 
