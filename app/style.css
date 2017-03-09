@@ -102,3 +102,16 @@ textPath {
   right: 0;
   bottom: 0;
 }
+
+.modal-content  {
+	-webkit-border-radius: 0px !important;
+	-moz-border-radius: 0px !important;
+	border-radius: 0px !important;
+}
+
+.btn{
+	background-color: #e1e1e1;
+	-webkit-border-radius: 0px !important;
+	-moz-border-radius: 0px !important;
+	border-radius: 0px !important;
+}

@@ -26,7 +26,16 @@ const createNodes = (data, radius, width) => {
         const x = (radius * Math.cos(angle)) + (width/10);
 		const y = (radius * Math.sin(angle)) + (width/10);
 
-		nodes.push({x: x, y: y, name: data[i].name, picture: data[i].picture, age: data[i].age});
+		nodes.push(
+			{
+				x: x,
+				y: y,
+				name: data[i].name,
+				picture: data[i].picture,
+				age: data[i].age,
+				home: data[i].home
+			}
+			);
 	}
 	return nodes;
 };
@@ -117,8 +126,9 @@ let image = node.append("svg:image")
 
 		$('#modal').modal();
 		$('.modal-title').text(p.name);
-		$('.modal-body').text(p.age);
-	})
+		$('.age').text(p.age);
+        $('.home').text(p.home);
+	});
 
 
 function polarToCartesian(centerX, centerY, radius, angleInDegrees) {
