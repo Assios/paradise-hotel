@@ -4,7 +4,7 @@
 	"name": "Sophie Vågsæther",
 	"age": "25",
 	"url": "http://lol.tv3.no/julius",
-	"sex": [2, 3],
+	"sex": [],
 	"notsex": [],
 	"picture": "/img/sophie.png"
 }, {
@@ -12,8 +12,8 @@
 	"name": "Martine Johansen",
 	"age": "21",
 	"url": "http://lol.tv3.no/kornelius",
-	"sex": [2],
-	"notsex": [3],
+	"sex": [],
+	"notsex": [],
 	"picture": "/img/martine.png"
 }, {
 	"id": 2,
@@ -31,5 +31,32 @@
 	"sex": [],
 	"notsex": [],
 	"picture": "/img/grunde.png"
+	},
+	{
+	"id": 4,
+	"name": "Rebecca Forsbæck",
+	"age": "23",
+	"url": "http://lol.tv3.no/kornelius",
+	"sex": [],
+	"notsex": [],
+	"picture": "/img/rebecca.png"
+	},
+	{
+	"id": 5,
+	"name": "Andrea Sveinsdottir",
+	"age": "23",
+	"url": "http://lol.tv3.no/kornelius",
+	"sex": [],
+	"notsex": [],
+	"picture": "/img/andrea.png"
+	},
+	{
+	"id": 6,
+	"name": "Sofie Nilsen",
+	"age": "23",
+	"url": "http://lol.tv3.no/kornelius",
+	"sex": [],
+	"notsex": [],
+	"picture": "/img/sofie.png"
 	}
 ]

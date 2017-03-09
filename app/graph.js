@@ -5,11 +5,9 @@ let width = window.innerWidth;
 let height = window.innerHeight;
 const m = () => Math.random();
 
-let nodes = [];
 let edges = [];
 
 for (let i = 0; i < data.length; i++) {
-	nodes.push({x: m(), y: m(), name: data[i].name, picture: data[i].picture, age: data[i].age});
 
 	for (let j = 0; j < data[i].sex.length; j++) {
 		edges.push({source: data[i].id, target: data[i].sex[j], type: 'sex'});
@@ -19,6 +17,24 @@ for (let i = 0; i < data.length; i++) {
 		edges.push({source: data[i].id, target: data[i].notsex[j], type: 'notsex'});
 	}
 }
+
+const createNodes = (data, radius, width) => {
+	let nodes = [];
+
+	for (let i = 0; i < data.length; i++) {
+		const angle = (i / (data.length/2)) * Math.PI; // Calculate the angle at which the element will be placed.
+        const x = (radius * Math.cos(angle)) + (width/10); // Calculate the x position of the element.
+		const y = (radius * Math.sin(angle)) + (width/10); // Calculate the y position of the element.
+
+		nodes.push({x: x, y: y, name: data[i].name, picture: data[i].picture, age: data[i].age});
+
+	}
+
+	return nodes;
+
+};
+
+const nodes = createNodes(data, 500, width);
 
 let force = d3.layout.force()
 	.size([width, height])
