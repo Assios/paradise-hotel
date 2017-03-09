@@ -9,7 +9,7 @@ let nodes = [];
 let edges = [];
 
 for (let i = 0; i < data.length; i++) {
-	nodes.push({x: m(), y: m(), name: data[i].name, picture: data[i].picture});
+	nodes.push({x: m(), y: m(), name: data[i].name, picture: data[i].picture, age: data[i].age});
 
 	for (let j = 0; j < data[i].sex.length; j++) {
 		edges.push({source: data[i].id, target: data[i].sex[j], type: 'sex'});
@@ -101,8 +101,9 @@ let image = node.append("svg:image")
 	.on("click", function() {
 		p = $(this)[0].__data__;
 
-		$('#myModal').modal();
+		$('#modal').modal();
 		$('.modal-title').text(p.name);
+		$('.modal-body').text(p.age);
 	});
 
 

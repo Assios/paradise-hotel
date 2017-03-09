@@ -33,6 +33,7 @@ function render() {
   object.position.x = Math.sin(+new Date() / 700);
   object.position.y = Math.cos(+new Date() / 1000) - 1;
   object.position.z = Math.cos(+new Date() / 800);
+  object.rotateX(Math.sin(+new Date() / 700)/100);
 
   renderer.render(scene, camera);
 }

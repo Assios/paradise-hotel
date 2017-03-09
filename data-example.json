@@ -2,6 +2,7 @@
 	{
 	"id": 0,
 	"name": "Sophie Vågsæther",
+	"age": "25",
 	"url": "http://lol.tv3.no/julius",
 	"sex": [2, 3],
 	"notsex": [],
@@ -9,23 +10,26 @@
 }, {
 	"id": 1,
 	"name": "Martine Johansen",
+	"age": "21",
 	"url": "http://lol.tv3.no/kornelius",
 	"sex": [2],
 	"notsex": [3],
-	"picture": "/img/sophie.png"
+	"picture": "/img/martine.png"
 }, {
 	"id": 2,
 	"name": "Aleksander Sæterstøl",
+	"age": "23",
 	"url": "http://lol.tv3.no/kornelius",
 	"sex": [],
 	"notsex": [],
-	"picture": "/img/sophie.png"
+	"picture": "/img/aleksander.png"
 }, {
 	"id": 3,
 	"name": "Grunde Myhrer",
+	"age": "20",
 	"url": "http://lol.tv3.no/kornelius",
 	"sex": [],
 	"notsex": [],
-	"picture": "/img/sophie.png"
+	"picture": "/img/grunde.png"
 	}
 ]
