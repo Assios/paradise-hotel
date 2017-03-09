@@ -99,6 +99,7 @@ let image = node.append("svg:image")
     .attr("x", 0)
     .attr("y", 0)
 	.on("click", function() {
+		if (d3.event.defaultPrevented) return;
 		p = $(this)[0].__data__;
 
 		$('#modal').modal();
