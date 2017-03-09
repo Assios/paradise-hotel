@@ -21,7 +21,7 @@ div#legend {
 
 main {
 	padding-top: 0rem;
-	width: 65vw;
+	width: 100vw;
 	clear: none;
 	height: 100vh;
 	margin-left: auto;
@@ -50,6 +50,10 @@ aside h1 {
 
 .node-label {
 	font-family: Verdana, sans-serif;
+}
+
+textPath {
+	text-shadow: 4px 6px 5px rgba(0,0,0,0.3);
 }
 
 #legend {

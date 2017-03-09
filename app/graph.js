@@ -1,8 +1,8 @@
 const d3 = require('d3');
 const data = require('../data-example.json');
 
-let width = 1000;
-let height = 700;
+let width = window.innerWidth;
+let height = window.innerHeight;
 const m = () => Math.random();
 
 let nodes = [];
@@ -67,7 +67,7 @@ function dragend(d, i) {
     force.resume();
 }
 
-let radius = width/18
+let radius = width/24
 
 let node_drag = d3.behavior.drag()
     .on("dragstart", dragstart)
