@@ -9,7 +9,7 @@ document.body.appendChild(renderer.domElement);
 renderer.domElement.classList.add('butterfly');
 
 const cubeGeometry = new THREE.BoxGeometry(1, 1, 1);
-const material = new THREE.MeshBasicMaterial({color: 0xffffff});
+const material = new THREE.MeshBasicMaterial({color: 0xffffff, side: THREE.DoubleSide});
 const cube = new THREE.Mesh(cubeGeometry, material);
 camera.position.z = 5;
 
