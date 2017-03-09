@@ -31,7 +31,7 @@ const createNodes = (data, radius, width) => {
 	return nodes;
 };
 
-const nodes = createNodes(data, 500, width);
+const nodes = createNodes(data, 1000, width);
 
 let force = d3.layout.force()
 	.size([width, height])
@@ -80,7 +80,7 @@ function dragend(d, i) {
     force.resume();
 }
 
-let radius = width/24
+let radius = Math.floor(width/(data.length*2.3));
 
 let node_drag = d3.behavior.drag()
     .on("dragstart", dragstart)
@@ -118,7 +118,7 @@ let image = node.append("svg:image")
 		$('#modal').modal();
 		$('.modal-title').text(p.name);
 		$('.modal-body').text(p.age);
-	});
+	})
 
 
 function polarToCartesian(centerX, centerY, radius, angleInDegrees) {
@@ -154,6 +154,7 @@ var text = arcPaths.append("text")
     .attr("startOffset",function(d,i){return "50%";})
     .text(function(d){return d.name.toUpperCase();})
 
+
 function tick() {
 	circle.attr('r', radius)
 		.attr('cx', d => d.x)
@@ -179,7 +180,7 @@ function tick() {
     });
 
 	text.style('fill', 'white')
-		.style('font-size', '1.5rem')
+		.style('font-size', '1.4rem')
 
 	edge.attr('x1', d => d.source.x)
 		.attr('y1', d => d.source.y)

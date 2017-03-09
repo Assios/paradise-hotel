@@ -12,7 +12,7 @@
 	"name": "Martine Johansen",
 	"age": "21",
 	"url": "http://lol.tv3.no/kornelius",
-	"sex": [4, 6],
+	"sex": [],
 	"notsex": [],
 	"picture": "/img/martine.png"
 }, {
@@ -28,7 +28,7 @@
 	"name": "Grunde Myhrer",
 	"age": "20",
 	"url": "http://lol.tv3.no/kornelius",
-	"sex": [6],
+	"sex": [],
 	"notsex": [],
 	"picture": "/img/grunde.png"
 	},
@@ -47,7 +47,7 @@
 	"age": "23",
 	"url": "http://lol.tv3.no/kornelius",
 	"sex": [],
-	"notsex": [2, 3, 0],
+	"notsex": [],
 	"picture": "/img/andrea.png"
 	},
 	{
@@ -58,5 +58,77 @@
 	"sex": [],
 	"notsex": [],
 	"picture": "/img/sofie.png"
+	},
+	{
+		"id": 7,
+		"name": "Haakon Gulla Pedersen",
+		"age": "23",
+		"url": "http://lol.tv3.no/kornelius",
+		"sex": [],
+		"notsex": [],
+		"picture": "/img/haakon.png"
+	},
+	{
+		"id": 8,
+		"name": "Morten Monsen Botten",
+		"age": "23",
+		"url": "http://lol.tv3.no/kornelius",
+		"sex": [],
+		"notsex": [],
+		"picture": "/img/morten.png"
+	},
+	{
+		"id": 9,
+		"name": "Kevin René Gustavsson",
+		"age": "23",
+		"url": "http://lol.tv3.no/kornelius",
+		"sex": [],
+		"notsex": [],
+		"picture": "/img/kevin.png"
+	},
+	{
+		"id": 10,
+		"name": "Joachim Solvang",
+		"age": "26",
+		"url": "http://lol.tv3.no/kornelius",
+		"sex": [],
+		"notsex": [],
+		"picture": "/img/joachim.png"
+	},
+	{
+		"id": 11,
+		"name": "Jonas Andersen",
+		"age": "26",
+		"url": "http://lol.tv3.no/kornelius",
+		"sex": [],
+		"notsex": [],
+		"picture": "/img/jonas.png"
+	},
+	{
+		"id": 12,
+		"name": "Mathias Haugsdal",
+		"age": "26",
+		"url": "http://lol.tv3.no/kornelius",
+		"sex": [],
+		"notsex": [],
+		"picture": "/img/mathias.png"
+	},
+	{
+		"id": 13,
+		"name": "Marcus Borger",
+		"age": "26",
+		"url": "http://lol.tv3.no/kornelius",
+		"sex": [],
+		"notsex": [],
+		"picture": "/img/marcus.png"
+	},
+	{
+		"id": 14,
+		"name": "Petter Sjurseth Berg",
+		"age": "26",
+		"url": "http://lol.tv3.no/kornelius",
+		"sex": [],
+		"notsex": [],
+		"picture": "/img/petter.png"
 	}
 ]
