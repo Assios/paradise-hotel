@@ -12,7 +12,7 @@
 	"name": "Martine Johansen",
 	"age": "21",
 	"url": "http://lol.tv3.no/kornelius",
-	"sex": [],
+	"sex": [4, 6],
 	"notsex": [],
 	"picture": "/img/martine.png"
 }, {
@@ -28,7 +28,7 @@
 	"name": "Grunde Myhrer",
 	"age": "20",
 	"url": "http://lol.tv3.no/kornelius",
-	"sex": [],
+	"sex": [6],
 	"notsex": [],
 	"picture": "/img/grunde.png"
 	},
@@ -47,7 +47,7 @@
 	"age": "23",
 	"url": "http://lol.tv3.no/kornelius",
 	"sex": [],
-	"notsex": [],
+	"notsex": [2, 3, 0],
 	"picture": "/img/andrea.png"
 	},
 	{

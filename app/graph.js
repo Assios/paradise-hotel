@@ -22,16 +22,13 @@ const createNodes = (data, radius, width) => {
 	let nodes = [];
 
 	for (let i = 0; i < data.length; i++) {
-		const angle = (i / (data.length/2)) * Math.PI; // Calculate the angle at which the element will be placed.
-        const x = (radius * Math.cos(angle)) + (width/10); // Calculate the x position of the element.
-		const y = (radius * Math.sin(angle)) + (width/10); // Calculate the y position of the element.
+		const angle = (i / (data.length/2)) * Math.PI;
+        const x = (radius * Math.cos(angle)) + (width/10);
+		const y = (radius * Math.sin(angle)) + (width/10);
 
 		nodes.push({x: x, y: y, name: data[i].name, picture: data[i].picture, age: data[i].age});
-
 	}
-
 	return nodes;
-
 };
 
 const nodes = createNodes(data, 500, width);
@@ -125,7 +122,7 @@ let image = node.append("svg:image")
 
 
 function polarToCartesian(centerX, centerY, radius, angleInDegrees) {
-    var angleInRadians = (angleInDegrees-90) * Math.PI / 180.0;
+    let angleInRadians = (angleInDegrees-90) * Math.PI / 180.0;
     return {
         x: centerX + (radius * Math.cos(angleInRadians)),
         y: centerY + (radius * Math.sin(angleInRadians))
