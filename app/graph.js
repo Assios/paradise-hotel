@@ -1,5 +1,5 @@
 const d3 = require('d3');
-const data = require('../data-example.json');
+const data = require('../deltagere.json');
 
 let width = window.innerWidth;
 let height = window.innerHeight;
