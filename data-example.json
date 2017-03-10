@@ -5,8 +5,8 @@
 	"age": "24",
 	"home": "Stranda",
 	"url": "http://lol.tv3.no/julius",
-	"sex": [],
-	"notsex": [],
+	"sex": [2, 3],
+	"notsex": [7],
 	"picture": "/img/sophie.png"
 }, {
 	"id": 1,
@@ -83,7 +83,7 @@
 		"home": "Bodø",
 		"url": "http://lol.tv3.no/kornelius",
 		"sex": [],
-		"notsex": [],
+		"notsex": [6],
 		"picture": "/img/morten.png"
 	},
 	{
