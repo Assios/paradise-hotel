@@ -4,7 +4,7 @@
 }
 
 body {
-	background-color: #1a1a1a;
+	background: #1a1a1a;
 }
 
 body, #content {
@@ -80,12 +80,12 @@ textPath {
 }
 
 #sex .circle {
-	color: #F7B1AB;
+	color: #f7ecbd;
 	font-size: 8rem;
 }
 
 #notsex .circle {
-	color: #7A9B76;
+	color: #ffadbc;
 	font-size: 8rem;
 }
 

@@ -66,8 +66,8 @@ let svg = d3.select('main').append('svg')
     .attr('width', width)
     .attr('height', height)
 
-let notSexColor = '#7A9B76'
-let sexColor = '#F7B1AB'
+let notSexColor = '#ffadbc'
+let sexColor = '#f7ecbd'
 
 let edge = svg.selectAll('.link')
     .data(edges)
