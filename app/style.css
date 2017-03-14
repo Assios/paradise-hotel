@@ -64,7 +64,6 @@ textPath {
 #legend {
 	padding-left: 2rem;
 	display: flex;
-	width: 40%;
 	margin-top: 2rem;
 }
 
@@ -73,24 +72,45 @@ textPath {
 }
 
 #sex {
-	width: 20rem;
+	width: 50rem;
 }
 
 #notsex {
-	flex-grow: 1;
+	width: 20rem;
 }
 
-#sex *, #notsex * {
+#partner {
+	width:20rem;
+}
+
+#sex *, #notsex *, #partner {
 	vertical-align: middle;
 }
 
 #sex .circle {
-	color: #f7ecbd;
+	color: #e74c3c;
 	font-size: 8rem;
+}
+
+#pulttext {
+	color: #e74c3c;
+}
+
+#kyssettext {
+	color: #ffadbc;
+}
+
+#partnertext {
+	color: #468966;
 }
 
 #notsex .circle {
 	color: #ffadbc;
+	font-size: 8rem;
+}
+
+#partner .circle {
+	color: #468966;
 	font-size: 8rem;
 }
 

@@ -7,9 +7,11 @@ let height = window.innerHeight;
 let edges = [];
 
 const numberOfMatches = (data, edges, type) => {
-    return edges
+    const val = edges
         .map((edge) => (edge.type === type && (edge.source === data || edge.target === data)))
         .reduce((prev, curr) => prev + curr);
+
+    return val || 0;
 };
 
 for (let i = 0; i < data.length; i++) {
@@ -80,8 +82,8 @@ function runVisualisation() {
         .attr('height', height)
 
     let notSexColor = '#ffadbc'
-    let sexColor = '#f7ecbd'
-    let partnerColor = '#e74c3c'
+    let sexColor = '#e74c3c'
+    let partnerColor = '#468966'
 
     let strokeWidth = '5px'
 

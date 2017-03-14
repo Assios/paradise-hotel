@@ -8,12 +8,6 @@
     <div id="content">
       <main>
       </main>
-      <aside hidden>
-        <h1>Hvem har pult og rotet i Paradise?</h1>
-        <div id="legend">
-          <div id="sex"><span class="circle">●</span> <span class="legend-text">Pult</span></div>
-          <div id="notsex"><span class="circle">●</span> <span class="legend-text">Kysset</span></div>
-      </aside>
     </div>
 
     <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" hidden>
@@ -26,9 +20,9 @@
           <div class="modal-body">
             <p style="font-weight:bold">Alder: <span class="age"></span> år</p>
             <p style="font-weight:bold">Sted: <span class="home"></span></p>
-            <p style="font-weight:bold">Pult: <span class="pult"></span></p>
-            <p style="font-weight:bold">Kysset: <span class="rotet"></span></p>
-            <p style="font-weight:bold">Partner: <span class="partner"></span></p>
+            <p style="font-weight:bold" id="pulttext">Pult: <span class="pult"></span></p>
+            <p style="font-weight:bold" id="kyssettext">Kysset: <span class="rotet"></span></p>
+            <p style="font-weight:bold" id="partnertext">Partner: <span class="partner"></span></p>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-default" data-dismiss="modal">Lukk</button>
