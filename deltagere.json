@@ -23,6 +23,7 @@
 		"sex":[
 		],
 		"partner":[
+          8
 		],
 		"notsex":[
 
@@ -46,6 +47,24 @@
 		],
 		"picture":"/img/aleksander.png"
 	},
+    {
+      "id":3,
+      "name":"Grunde Myhrer",
+      "age":"20",
+      "home":"Oslo",
+      "url":"http://lol.tv3.no/kornelius",
+      "sex":[
+
+      ],
+      "partner":[
+
+      ],
+      "notsex":[
+
+      ],
+      "picture":"/img/grunde.png",
+      "ute": true
+    },
 	{
 		"id":4,
 		"name":"Rebecca Forsbæck",
@@ -56,10 +75,10 @@
 
 		],
 		"partner":[
-
+          7
 		],
 		"notsex":[
-
+          8
 		],
 		"picture":"/img/rebecca.png"
 	},
@@ -73,7 +92,7 @@
 
 		],
 		"partner":[
-
+          10
 		],
 		"notsex":[
 
@@ -90,7 +109,7 @@
 
 		],
 		"partner":[
-
+          9
 		],
 		"notsex":[
 
@@ -132,7 +151,7 @@
 		"picture":"/img/morten.png"
 	},
 	{
-		"id":9,
+		"id": 9,
 		"name":"Kevin René Gustavsson",
 		"age":"21",
 		"home":"Stord",
