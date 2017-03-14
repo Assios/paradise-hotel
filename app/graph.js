@@ -274,10 +274,14 @@ function runVisualisation() {
             .attr('height', height)
         image.attr("width", 2 * radius)
             .attr("height", 2 * radius)
-        force.size([width, height]).linkDistance(Math.min(height, width*0.75) / 1.8).resume()
+        force.size([width, height])
+            .linkDistance(Math.min(height, width*0.75) / 1.8)
+            .resume()
     }
 }
 
 document.addEventListener('DOMContentLoaded', (event) => {
-    runVisualisation();
+    runVisualisation()
+    document.querySelector('aside').hidden = false
+    document.querySelector('#modal').hidden = false
 })
