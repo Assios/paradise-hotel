@@ -78,7 +78,7 @@ let svg = d3.select('main').append('svg')
 
 let notSexColor = '#ffadbc'
 let sexColor = '#f7ecbd'
-let partnerColor = '#338833'
+let partnerColor = '#e74c3c'
 
 let strokeWidth = '5px'
 
@@ -151,12 +151,31 @@ let image = node.append("svg:image")
         if (d3.event.defaultPrevented) return;
         p = $(this)[0].__data__;
 
+        let partner = "";
+
+        for (let i = 0; i < edges.length; i++) {
+            if (p.id === edges[i].source.id && edges[i].type === 'partner') {
+                partner = edges[i].target.name;
+                break;
+            }
+        }
+
+        if (!partner) {
+            for (let i = 0; i < edges.length; i++) {
+                if (p.id === edges[i].target.id && edges[i].type === 'partner') {
+                    partner = edges[i].source.name;
+                    break;
+                }
+            }
+        }
+
         $('#modal').modal();
         $('.modal-title').text(p.name);
         $('.age').text(p.age);
         $('.home').text(p.home);
         $('.pult').text(numberOfMatches(p, edges, 'sex'));
         $('.rotet').text(numberOfMatches(p, edges, 'notsex'));
+        $('.partner').text(partner);
     });
 
 
