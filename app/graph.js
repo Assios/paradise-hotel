@@ -13,7 +13,6 @@ const numberOfMatches = (data, edges, type) => {
 };
 
 for (let i = 0; i < data.length; i++) {
-
     for (let j = 0; j < data[i].sex.length; j++) {
         edges.push({
             source: data[i].id,
@@ -27,6 +26,14 @@ for (let i = 0; i < data.length; i++) {
             source: data[i].id,
             target: data[i].notsex[j],
             type: 'notsex'
+        });
+    }
+
+    for (let j = 0; j < data[i].partner.length; j++) {
+        edges.push({
+            source: data[i].id,
+            target: data[i].partner[j],
+            type: 'partner'
         });
     }
 }
@@ -46,7 +53,10 @@ const createNodes = (data, radius, width) => {
             name: data[i].name,
             picture: data[i].picture,
             age: data[i].age,
-            home: data[i].home
+            home: data[i].home,
+            sex: data[i].sex,
+            partner: data[i].partner,
+            notsex: data[i].notsex
         });
     }
     return nodes;
@@ -58,9 +68,9 @@ let force = d3.layout.force()
     .size([width, height])
     .nodes(nodes)
     .links(edges)
-    .linkDistance(width / 2)
-    .linkStrength(0.2)
-    .charge(-1200)
+    .linkDistance(width / 2.5)
+    .linkStrength(0.05)
+    .charge(-1500)
 
 let svg = d3.select('main').append('svg')
     .attr('width', width)
@@ -68,6 +78,9 @@ let svg = d3.select('main').append('svg')
 
 let notSexColor = '#ffadbc'
 let sexColor = '#f7ecbd'
+let partnerColor = '#338833'
+
+let strokeWidth = '5px'
 
 let edge = svg.selectAll('.link')
     .data(edges)
@@ -77,11 +90,13 @@ let edge = svg.selectAll('.link')
     .style('stroke', d => {
         if (d.type === 'sex') {
             return sexColor
-        } else {
+        } else if (d.type === 'notsex') {
             return notSexColor
+        } else if (d.type === 'partner') {
+            return partnerColor
         }
     })
-    .style('stroke-width', d => "5px")
+    .style('stroke-width', d => strokeWidth)
 
 function dragstart(d, i) {
     force.stop();
@@ -214,10 +229,35 @@ function tick() {
     text.style('fill', 'white')
         .style('font-size', '1.4rem')
 
-    edge.attr('x1', d => d.source.x)
-        .attr('y1', d => d.source.y)
-        .attr('x2', d => d.target.x)
-        .attr('y2', d => d.target.y)
+    let hasBothSexAndPartner = (d) => {
+        let sexAndnotsex = d.source.sex.concat(d.target.sex).concat(d.source.notsex).concat(d.target.notsex)
+        let partner = d.source.partner.concat(d.target.partner)
+        if (
+            (sexAndnotsex.includes(d.source.id) && partner.includes(d.source.id)) ||
+            (sexAndnotsex.includes(d.target.id) && partner.includes(d.target.id)) ||
+            (sexAndnotsex.includes(d.source.id) && partner.includes(d.target.id)) ||
+            (sexAndnotsex.includes(d.target.id) && partner.includes(d.source.id))
+        ) {
+            return true
+        }
+        return false
+    }
+
+    let fixPositions = (d, reference) => {
+        if (hasBothSexAndPartner(d)) {
+            if (d.type === 'partner') {
+                return reference-3.3
+            } else {
+                return reference+3.3
+            }
+        }
+        return reference
+    }
+
+    edge.attr('x1', d => fixPositions(d, d.source.x))
+        .attr('y1', d => fixPositions(d, d.source.y))
+        .attr('x2', d => fixPositions(d, d.target.x))
+        .attr('y2', d => fixPositions(d, d.target.y))
 };
 
 force.on("tick", tick);
