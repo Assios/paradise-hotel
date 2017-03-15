@@ -155,7 +155,7 @@ function runVisualisation() {
         .attr("y", 0)
         .on("click", function() {
             if (d3.event.defaultPrevented) return;
-            p = $(this)[0].__data__;
+            let p = $(this)[0].__data__;
 
             let partner = "";
 
