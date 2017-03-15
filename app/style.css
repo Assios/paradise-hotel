@@ -139,3 +139,7 @@ textPath {
 	-moz-border-radius: 0px !important;
 	border-radius: 0px !important;
 }
+
+image {
+	cursor: pointer;
+}
