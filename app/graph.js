@@ -1,5 +1,6 @@
-const d3 = require('d3');
-const data = require('../deltagere.json');
+import d3 from 'd3'
+import data from '../deltagere.json'
+//const data = require('../deltagere.json')
 
 let width = window.innerWidth;
 let height = window.innerHeight;
@@ -304,6 +305,6 @@ function runVisualisation() {
 
 document.addEventListener('DOMContentLoaded', (event) => {
     runVisualisation()
-    document.querySelector('aside').hidden = false
+    //document.querySelector('aside').hidden = false
     document.querySelector('#modal').hidden = false
 })

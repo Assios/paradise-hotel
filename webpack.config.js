@@ -7,17 +7,25 @@ module.exports = {
   entry: './app/index.js',
   output: {
     filename: 'bundle.js',
-    path: path.resolve(__dirname, 'dist')
+    path: path.resolve(__dirname, process.env.npm_package_config_build_path || 'dist')
   },
   module: {
     rules: [
-    {
-      test:  /\.css$/,
-      use: [
-        'style-loader',
-        {loader: 'css-loader', options: {import: false, url: false}}
-      ]
-    }
+      {
+          test: /\.js$/,
+          exclude: /(node_modules|bower_components)/,
+          loader: 'babel-loader',
+          query: {
+              presets: ["es2015"]
+          }
+      },
+      {
+        test:  /\.css$/,
+        use: [
+          'style-loader',
+          {loader: 'css-loader', options: {import: false, url: false}}
+        ]
+      }
     ]
   },
   plugins: [
@@ -31,8 +39,8 @@ module.exports = {
     new webpack.ProvidePlugin({
       jQuery: 'jquery',
       jquery: 'jquery',
-      $: 'jquery',
-      'THREE': 'three',
+      $: 'jquery'
     })
-  ]
+  ],
+  devtool: 'source-map'
 };

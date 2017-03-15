@@ -1,4 +1,5 @@
-import './OBJLoader.js';
+import * as THREE from 'three'
+import OBJLoader from './OBJLoader';
 
 const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
@@ -14,7 +15,7 @@ const material = new THREE.MeshBasicMaterial({map: THREE.ImageUtils.loadTexture(
 const cube = new THREE.Mesh(cubeGeometry, material);
 camera.position.z = 5;
 
-var loader = new THREE.OBJLoader();
+var loader = new OBJLoader();
 
 loader.load('butterfly.obj', object => {
   object.traverse(child => {
@@ -25,6 +26,7 @@ loader.load('butterfly.obj', object => {
   object.scale.set(0.02, 0.02, 0.02);
   scene.add(object);
   window.object = object;
+  render();
 });
 window.scene = scene;
 
@@ -38,4 +40,3 @@ function render() {
 
   renderer.render(scene, camera);
 }
-render();
