@@ -1,5 +1,3 @@
-# paradise-hotel
+# pærra.no
 
-Install [yarn](https://yarnpkg.com/en/docs/install).
-
-Run `yarn start` to run the project. It will now serve on 0.0.0.0:8081.
+![pærra](https://cloud.githubusercontent.com/assets/1413265/23984105/02e2817a-0a18-11e7-84ba-f2f7505c41e9.png)
