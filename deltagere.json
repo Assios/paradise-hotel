@@ -26,13 +26,13 @@
           8
 		],
 		"notsex":[
-
+			6
 		],
 		"picture":"/img/martine.png"
 	},
 	{
 		"id":2,
-		"name":"Aleksander Sæterstøl",
+		"name":"Alexander Sæterstøl",
 		"age":"20",
 		"home":"Bergen",
 		"url":"http://lol.tv3.no/kornelius",
@@ -43,7 +43,7 @@
 
 		],
 		"notsex":[
-
+		9, 15
 		],
 		"picture":"/img/aleksander.png"
 	},
@@ -78,7 +78,7 @@
           13
 		],
 		"notsex":[
-          8
+          8, 15
 		],
 		"picture":"/img/rebecca.png"
 	},
@@ -95,7 +95,7 @@
           14
 		],
 		"notsex":[
-
+			8
 		],
 		"picture":"/img/andrea.png"
 	},
@@ -251,5 +251,22 @@
 
 		],
 		"picture":"/img/petter.png"
+	},
+	{
+		"id":15,
+		"name":"Martine Lunde",
+		"age":"20",
+		"home":"Oslo",
+		"url":"http://lol.tv3.no/kornelius",
+		"sex":[
+
+		],
+		"partner":[
+
+		],
+		"notsex":[
+
+		],
+		"picture":"/img/martinelunde.jpg"
 	}
 ]
