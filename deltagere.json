@@ -234,5 +234,19 @@
     "notsex": [
     ],
     "picture": "/img/martinelunde.jpg"
+  },
+  {
+    "id": 16,
+    "name": "Sunny Kvalsund Khan",
+    "age": "26",
+    "home": "Skjetten",
+    "url": "http://lol.tv3.no/kornelius",
+    "sex": [
+    ],
+    "partner": [
+    ],
+    "notsex": [
+    ],
+    "picture": "/img/sunny.png"
   }
 ]
