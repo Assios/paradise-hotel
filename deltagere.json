@@ -36,13 +36,13 @@
     "home": "Bergen",
     "url": "http://lol.tv3.no/kornelius",
     "sex": [
+      15
     ],
     "partner": [
       15
     ],
     "notsex": [
-      9,
-      15
+      9, 6, 1
     ],
     "picture": "/img/aleksander.png"
   },
@@ -148,6 +148,7 @@
     "partner": [
     ],
     "notsex": [
+      15, 1
     ],
     "picture": "/img/kevin.png"
   },
@@ -218,6 +219,7 @@
     "partner": [
     ],
     "notsex": [
+      1
     ],
     "picture": "/img/petter.png"
   },
