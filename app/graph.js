@@ -98,8 +98,6 @@ function runVisualisation() {
                 return sexColor
             } else if (d.type === 'notsex') {
                 return notSexColor
-            } else if (d.type === 'partner') {
-                return partnerColor
             }
         })
         .style('stroke-width', d => strokeWidth)
