@@ -42,7 +42,7 @@
       15
     ],
     "notsex": [
-      9, 6, 1
+      9, 6, 1, 17
     ],
     "picture": "/img/aleksander.png"
   },
@@ -250,5 +250,19 @@
     "notsex": [
     ],
     "picture": "/img/sunny.png"
+  },
+  {
+    "id": 17,
+    "name": "Henriette Otervik",
+    "age": "22",
+    "home": "Trondheim",
+    "url": "http://lol.tv3.no/kornelius",
+    "sex": [
+    ],
+    "partner": [
+    ],
+    "notsex": [
+    ],
+    "picture": "/img/henriette.png"
   }
 ]
