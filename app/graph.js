@@ -12,7 +12,7 @@ const numberOfMatches = (data, edges, type) => {
         .map((edge) => (edge.type === type && (edge.source === data || edge.target === data)))
         .reduce((prev, curr) => prev + curr);
 
-    return val || 0;
+    return + val || 0;
 };
 
 for (let i = 0; i < data.length; i++) {
