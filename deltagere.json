@@ -1,10 +1,66 @@
 [
   {
     "id": 0,
-    "name": "Thea Enoksen",
+    "name": "Henrik Beyer",
+    "age": "21",
+    "home": "Bergen",
+    "url": "",
+    "sex": [
+    ],
+    "partner": [
+    ],
+    "notsex": [
+    ],
+    "picture": "/img/henrik.png"
+  },
+  {
+    "id": 1,
+    "name": "Tea Kristine Broholm",
     "age": "20",
-    "home": "Stokmarknes",
-    "url": "http://lol.tv3.no/julius",
+    "home": "Hitra",
+    "url": "",
+    "sex": [
+    ],
+    "partner": [
+    ],
+    "notsex": [
+    ],
+    "picture": "/img/tea.png"
+  },
+  {
+    "id": 2,
+    "name": "Walid Almasri",
+    "age": "22",
+    "home": "Oslo",
+    "url": "",
+    "sex": [
+    ],
+    "partner": [
+    ],
+    "notsex": [
+    ],
+    "picture": "/img/walid.png"
+   },
+     {
+    "id": 3,
+    "name": "Zainab Al-Yasseri",
+    "age": "21",
+    "home": "Porsgrunn",
+    "url": "",
+    "sex": [
+    ],
+    "partner": [
+    ],
+    "notsex": [
+    ],
+    "picture": "/img/zainab.png"
+  },
+  {
+    "id": 4,
+    "name": "Thea Gudmundsen",
+    "age": "21",
+    "home": "Stavanger",
+    "url": "",
     "sex": [
     ],
     "partner": [
@@ -14,228 +70,101 @@
     "picture": "/img/thea.png"
   },
   {
-    "id": 1,
-    "name": "Newa Reza",
-    "age": "21",
-    "home": "Oslo",
-    "url": "http://lol.tv3.no/julius",
-    "sex": [
-    ],
-    "partner": [
-    ],
-    "notsex": [
-    ],
-    "picture": "/img/newa.png"
-  },
-  {
-    "id": 2,
-    "name": "Cathrine Ingebretsen",
-    "age": "20",
-    "home": "Vennesla",
-    "url": "http://lol.tv3.no/julius",
-    "sex": [
-    ],
-    "partner": [
-    ],
-    "notsex": [
-    ],
-    "picture": "/img/cathrine.png"
-  },
-  {
-    "id": 3,
-    "name": "Julie Grindbakken",
-    "age": "21",
-    "home": "Kristiansand",
-    "url": "http://lol.tv3.no/julius",
-    "sex": [
-    ],
-    "partner": [
-    ],
-    "notsex": [
-    ],
-    "picture": "/img/julie.png"
-  },
-  {
-    "id": 4,
-    "name": "Ine Yri",
-    "age": "21",
-    "home": "Bergen",
-    "url": "http://lol.tv3.no/julius",
-    "sex": [
-    ],
-    "partner": [
-    ],
-    "notsex": [
-    ],
-    "picture": "/img/ine.png"
-  },
-  {
     "id": 5,
-    "name": "Erik Anders Sæter",
+    "name": "Mario Riera",
     "age": "20",
-    "home": "Storjord",
-    "url": "http://lol.tv3.no/julius",
+    "home": "Bergen",
+    "url": "",
     "sex": [
     ],
     "partner": [
     ],
     "notsex": [
     ],
-    "picture": "/img/erik.png"
-  },
-  {
+    "picture": "/img/mario.png"
+   },
+     {
     "id": 6,
-    "name": "Marius Pettersen",
-    "age": "21",
-    "home": "Mjøndalen",
-    "url": "http://lol.tv3.no/julius",
+    "name": "Lea Vik",
+    "age": "25",
+    "home": "Flekkefjord",
+    "url": "",
     "sex": [
     ],
     "partner": [
     ],
     "notsex": [
     ],
-    "picture": "/img/marius.png"
+    "picture": "/img/lea.png"
   },
   {
     "id": 7,
-    "name": "Leo Hviding",
-    "age": "21",
-    "home": "Stavanger",
-    "url": "http://lol.tv3.no/julius",
+    "name": "Floyd Olsen",
+    "age": "22",
+    "home": "Skjetten",
+    "url": "",
     "sex": [
     ],
     "partner": [
     ],
     "notsex": [
     ],
-    "picture": "/img/leo.png"
-  },
-  {
+    "picture": "/img/floyd.png"
+   },
+   {
     "id": 8,
-    "name": "Joakim Karlsen",
-    "age": "20",
-    "home": "Bergen",
-    "url": "http://lol.tv3.no/julius",
+    "name": "TIX",
+    "age": "25",
+    "home": "Bærum",
+    "url": "",
     "sex": [
     ],
     "partner": [
     ],
     "notsex": [
     ],
-    "picture": "/img/joakim.png"
+    "picture": "/img/tix.png"
   },
   {
     "id": 9,
-    "name": "Kristian Jarland",
-    "age": "22",
-    "home": "Bergen",
-    "url": "http://lol.tv3.no/julius",
+    "name": "Robin Johansson",
+    "age": "24",
+    "home": "Stockholm",
+    "url": "",
     "sex": [
-      3
     ],
     "partner": [
     ],
     "notsex": [
     ],
-    "picture": "/img/kristian.png"
-  },
-  {
+    "picture": "/img/robin.png"
+   },
+      {
     "id": 10,
-    "name": "Isabel Raad",
+    "name": "Bettina Buchanan",
     "age": "23",
-    "home": "Bryne",
-    "url": "http://lol.tv3.no/julius",
+    "home": "Stockholm",
+    "url": "",
     "sex": [
     ],
     "partner": [
     ],
     "notsex": [
     ],
-    "picture": "/img/isabel.png"
+    "picture": "/img/bettina.png"
   },
   {
     "id": 11,
-    "name": "Aurora Gude",
-    "age": "25",
-    "home": "Nøtterøy",
-    "url": "http://lol.tv3.no/julius",
+    "name": "Sofie Karlstad",
+    "age": "24",
+    "home": "Mehamn",
+    "url": "",
     "sex": [
     ],
     "partner": [
     ],
     "notsex": [
     ],
-    "picture": "/img/aurora.png"
-  },
-  {
-    "id": 12,
-    "name": "Ann Marielle Lipinska",
-    "age": "28",
-    "home": "Bergen",
-    "url": "http://lol.tv3.no/julius",
-    "sex": [
-    ],
-    "partner": [
-    ],
-    "notsex": [
-    ],
-    "picture": "/img/ann.png"
-  },
-  {
-    "id": 13,
-    "name": "Carl Aksel Jansen",
-    "age": "22",
-    "home": "Porsgrunn",
-    "url": "http://lol.tv3.no/julius",
-    "sex": [
-    ],
-    "partner": [
-    ],
-    "notsex": [
-    ],
-    "picture": "/img/carl.png"
-  },
-  {
-    "id": 14,
-    "name": "Sophie Vågesæter",
-    "age": "25",
-    "home": "Stranda",
-    "url": "http://lol.tv3.no/julius",
-    "sex": [
-    ],
-    "partner": [
-    ],
-    "notsex": [
-    ],
-    "picture": "/img/sophie.png"
-  },
-  {
-    "id": 15,
-    "name": "Mathias Pettersen",
-    "age": "25",
-    "home": "Oslo",
-    "url": "http://lol.tv3.no/julius",
-    "sex": [
-    ],
-    "partner": [
-    ],
-    "notsex": [
-    ],
-    "picture": "/img/mathias.png"
-  },
-  {
-    "id": 16,
-    "name": "Magne Robberstad",
-    "age": "29",
-    "home": "Nesodden",
-    "url": "http://lol.tv3.no/julius",
-    "sex": [
-    ],
-    "partner": [
-    ],
-    "notsex": [
-    ],
-    "picture": "/img/magne.png"
-  }
+    "picture": "/img/sofie.png"
+   }
 ]
