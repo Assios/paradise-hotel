@@ -169,4 +169,18 @@
     ],
     "picture": "/img/sofie.png"
    }
+	  {
+    "id": 69,
+    "name": "Asbjørn",
+    "age": "16",
+    "home": "Bryne",
+    "url": "",
+    "sex": [
+    ],
+    "partner": [
+    ],
+    "notsex": [
+    ],
+    "picture": "/img/assman.png"
+  },
 ]
